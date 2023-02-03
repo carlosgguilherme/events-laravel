@@ -19,4 +19,13 @@ Route::get('/', function () {
 
     return view('welcome',['nome' => $nome, 'idade' => $idade, 'profissao' => 'programador'] );
 });
+Route::get('/produtos_teste/{id?}', function($id){
+    return view('products', ['id' => $id]);
+});
+Route::get('/produtos', function () {
+    return view('products');
+});
+Route::get('/contato', function () {
+    return view('contact');
+});
 

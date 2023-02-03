@@ -1,3 +1,18 @@
-body{
-    background: black;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+button {
+  
+    margin: 10px 10px 10px 10px;
+    padding: 10px 60px;
+    border: hidden;
+    border-radius: 30px;
+    font-size: 15pt;
+    font-weight: bold;
+    transition: 200ms;
+}
+button:hover {
+    background-color: orange;
+    color: white;
 }
