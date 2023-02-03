@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,4 @@ Route::get('/produtos', function () {
 Route::get('/contato', function () {
     return view('contact');
 });
-
+Route::get('/events/create', [EventsController::class, 'create'])->name('events.create');
