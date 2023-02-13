@@ -14,19 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $nome = 'carlos';
-    $idade = 19;
 
-    return view('welcome',['nome' => $nome, 'idade' => $idade, 'profissao' => 'programador'] );
-});
-Route::get('/produtos_teste/{id?}', function($id){
-    return view('products', ['id' => $id]);
-});
-Route::get('/produtos', function () {
-    return view('products');
-});
-Route::get('/contato', function () {
-    return view('contact');
-});
-Route::get('/events/create', [EventsController::class, 'create'])->name('events.create');
+Route::get('/', [EventsController::class, 'index'])->name('welcome');
+Route::get('/produtos', [EventsController::class, 'products'])->name('products');
+Route::get('/contato', [EventsController::class, 'contact'])->name('contact');
+Route::get('/events/create', [EventsController::class, 'create'])->name('create');

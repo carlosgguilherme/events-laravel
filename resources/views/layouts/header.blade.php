@@ -21,24 +21,26 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbar"></div>
-            <a href="/" class="navbar-brand">
-                Site do carlos
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">EVENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">CRIAR EVENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">ENTRAR</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">CADASTRAR</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbar">
+                <a href="/" class="navbar-brand">
+                    <img id="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg"
+                        alt="Nintendo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('create')}}" class="nav-link">CRIAR EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">ENTRAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">CADASTRAR</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     @yield('content')
