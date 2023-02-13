@@ -23,15 +23,15 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
                 <a href="/" class="navbar-brand">
-                    <img id="Logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg"
+                    <img id="Logo" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Control_video_game_logo.svg"
                         alt="Nintendo">
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">EVENTOS</a>
+                        <a href="/" class="nav-link">PRODUTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('create')}}" class="nav-link">CRIAR EVENTOS</a>
+                        <a href="{{ route('create')}}" class="nav-link">VENDER PRODUTOS</a>
                     </li>
                     <li class="nav-item">
                         <a href="/" class="nav-link">ENTRAR</a>
@@ -45,7 +45,7 @@
     </header>
     @yield('content')
     <footer>
-        <p>Olha lá &copy;</p>
+        <p>E-shop &copy; 2023</p>
     </footer>
 </body>
 

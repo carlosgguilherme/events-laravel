@@ -29,12 +29,13 @@ button {
 }
 
 button:hover {
-    background-color: orange;
+    background-color: red;
     color: white;
 }
 
 #navbar img {
-    width: 50px;
+    width: 100px;
+    margin: 5px;
 }
 
 #navar {
@@ -49,11 +50,11 @@ button:hover {
 }
 
 #navbar a:hover {
-    color: #f2a340;
+    color: red;
 }
 
 #search-container {
-    background-color: url("https://media-blog.keeperformaturas.com.br/wp-content/uploads/2019/07/Como-se-preparar-para-os-diferentes-tipos-de-eventos-da-formatura.jpg");
+    background-image: url("https://geek360.com.br/wp-content/uploads/2018/02/melhor-console-de-videogame.png");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -62,9 +63,11 @@ button:hover {
 }
 
 #search-container h1 {
-    color: #f2a340;
+    font-family: Ubuntu;
+    color: red;
     margin-bottom: 30px;
-    font-weight: 300px;
+    font-weight: 900;
+
 }
 
 #search-container form {
@@ -89,18 +92,20 @@ button:hover {
     display: flex;
 }
 
-#events-container card {
+#events-container .card {
     flex: 1 1 0;
     max-width: 25%;
     border-radius: 10%;
     padding: 0;
     margin: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.050);
 }
 
 #events-container img {
     max-height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
+    
 }
 
 .card .card-date {
@@ -114,3 +119,22 @@ button:hover {
     font-weight: bold;
     margin-bottom: 30px;
 }
+
+.card-participants{
+    font-size: 14px;
+    color: #757575;
+}
+
+footer{
+    text-align: center;
+    background-color: #353e48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin-bottom: 0;
+}
+

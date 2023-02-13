@@ -5,9 +5,7 @@
 @section('content')
 
     <body>
-
-
-        <h1>Crie um evento</h1>
+        <h1>Crie um produto</h1>
     </body>
 
     </html>
