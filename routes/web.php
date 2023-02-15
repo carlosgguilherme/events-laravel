@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [EventsController::class, 'index'])->name('welcome');
-Route::get('/produtos', [EventsController::class, 'products'])->name('products');
-Route::get('/contato', [EventsController::class, 'contact'])->name('contact');
-Route::get('/venda', [EventsController::class, 'create'])->name('create');
+
+Route::group(['prefix' => 'control'], function () {
+    Route::get('/produtos', [EventsController::class, 'products'])->name('products');
+    Route::get('/contato', [EventsController::class, 'contact'])->name('contact');
+    Route::get('/venda', [EventsController::class, 'create'])->name('create');
+    Route::post('/store', [EventsController::class, 'store'])->name('product.store');
+});

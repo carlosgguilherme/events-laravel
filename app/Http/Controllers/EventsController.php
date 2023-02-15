@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use Illuminate\Http\Client\Request as ClientRequest;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -14,7 +15,14 @@ class EventsController extends Controller
     }
     public function create()
     {
-        return view('create');
+        return view('events.create');
+    }
+    public function store(Request $request){
+        $data = $request->all();
+
+        Event::create($data);
+
+        return redirect('welcome');
     }
     public function contact()
     {
