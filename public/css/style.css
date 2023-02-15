@@ -63,8 +63,10 @@ button:hover {
 }
 
 #search-container h1 {
-    font-family: Ubuntu;
-    color: red;
+    font-family: 'Airstrike Regular ';
+    src: url('airstrike.ttf') format('truetype');
+    /* box-shadow: 21px 36px 35px -19px rgba(0,0,0,0.43); */
+    color: #d81888;
     margin-bottom: 30px;
     font-weight: 900;
 
